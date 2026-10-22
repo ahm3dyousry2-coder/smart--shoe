@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Shoe | Dashboard</title>
+
+    <!-- Bootstrap 5 (local/offline) -->
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (local/offline icons) -->
+    <link href="./css/all.min.css" rel="stylesheet">
+
+    <!-- file-css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl smart-navbar">
+        <div class="container-fluid px-2 px-sm-3 px-lg-4">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#dashboard">
+                <img alt="Smart Shoe Logo" class="nav-logo shadow" src="img/smart-shoe-logo.jpeg" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Toggle Button -->
+<!-- Navigation -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-stretch align-items-xl-center">
+                    <!-- Dashboard -->
+                    <li class="nav-item">
+                        <a class="nav-link dashboard-nav-link" href="#dashboard">
+                            <i class="fas fa-gauge-high"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <!-- Products -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">
+                            <i class="fas fa-box"></i>
+                            <span>Products</span>
+                        </a>
+                    </li>
+                    <!-- Inventory -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inventory">
+                            <i class="fas fa-box-archive"></i>
+                            <span>Inventory</span>
+                        </a>
+                    </li>
+                    <!-- Production -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#production">
+                            <i class="fas fa-gears"></i>
+                            <span>Production</span>
+                        </a>
+                    </li>
+                    <!-- Quality Control -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quality-control">
+                            <i class="fas fa-shield-halved"></i>
+                            <span>Quality Control</span>
+                        </a>
+                    </li>
+                    <!-- Sales -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sales">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Sales Report</span>
+                        </a>
+                    </li>
+                    <!-- returns -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#returns">
+                            <i class="fas fa-rotate-left"></i>
+                            <span>Returns</span>
+                        </a>
+                    </li>
+                    <!-- Employees -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#employees">
+                            <i class="fas fa-people-group"></i>
+                            <span>Employees</span>
+                        </a>
+                    </li>
+                    <!-- Reports -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reports">
+                            <i class="fas fa-file-lines"></i>
+                            <span>Reports</span>
+                        </a>
+                    </li>
+                    <!-- profit -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profit-analysis">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Profit</span>
+                        </a>
+                    </li>
+                    <!-- Business Intelligence -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#business-intelligence">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Business Intelligence</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Dashboard -->
+            <section class="page-section dashboard-compact" id="dashboard">
+            <div class="container-fluid px-2 px-sm-3 px-lg-4">
+                <div class="hero dashboard-hero mb-4 flex-column flex-md-row text-center text-md-start">
+                    <div>
+                        <span class="eyebrow">SMART SHOE MANAGEMENT SYSTEM</span>
+                        <h1>Dashboard Overview</h1>
+                        <p>Quick summary of the main business areas.</p>
+                    </div>
+                    <div class="hero-icon"><i class="fas fa-gauge-high"></i></div>
+                </div>
+                <div class="row g-3 dashboard-summary">
+                    <div class="col-6 col-lg-3">
+                        <a class="dashboard-mini-card" href="#products">
+                            <i class="fas fa-box"></i>
+                            <div><span>Products</span><strong>3</strong><small>Active lines</small></div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a class="dashboard-mini-card" href="#inventory">
+                            <i class="fas fa-box-archive"></i>
+                            <div><span>Inventory</span><strong>2,620</strong><small>Units tracked</small></div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a class="dashboard-mini-card" href="#production">
+                            <i class="fas fa-gears"></i>
+                            <div><span>Production</span><strong>890</strong><small>Current units</small></div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a class="dashboard-mini-card" href="#sales">
+                            <i class="fas fa-arrow-trend-up"></i>
+                            <div><span>Sales</span><strong>$164.27K</strong><small>September revenue</small></div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a class="dashboard-mini-card" href="#quality-control">
+                            <i class="fas fa-shield-halved"></i>
+                            <div><span>Quality</span><strong>96%</strong><small>Quality rate</small></div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a class="dashboard-mini-card" href="#employees">
+                            <i class="fas fa-people-group"></i>
+                            <div><span>Employees</span><strong>86</strong><small>Total staff</small></div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a class="dashboard-mini-card" href="#returns">
+                            <i class="fas fa-rotate-left"></i>
+                            <div><span>Returns</span><strong>126</strong><small>Total returns</small></div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <a class="dashboard-mini-card" href="#business-intelligence">
+                            <i class="fas fa-lightbulb"></i>
+                            <div><span>Business Intelligence</span><strong>+18.4%</strong><small>Sales trend</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dashboard-bottom-summary mt-3">
+                    <span><i class="fas fa-circle-info"></i> Quick view</span>
+                    <strong>Production 64.5%</strong>
+                    <strong>Inventory 92%</strong>
+                    <strong>Productivity 91%</strong>
+                    <a href="#reports">View Reports <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Products -->
+        <section id="products" class="page-section section-soft">
+            <div class="container-fluid px-4">
+                <div class="section-heading">
+                    <div><span class="eyebrow">CATALOG</span>
+                        <h2>Latest Products</h2>
+                    </div>
+                    <span class="section-icon"><i class="fas fa-grip"></i></span>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-4">
+                        <article class="product-card" data-category="hot">
+                            <div class="product-image">
+                                <img src="img/product-1.jpg" alt="Running shoe">
+                                <span class="badge-custom badge-hot">HOT</span>
+                            </div>
+                            <div class="p-4">
+                                <h3>Urban Runner</h3>
+                                <p>Lightweight performance shoe.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong>$89</strong><span>SKU-001</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="product-card" data-category="new">
+                            <div class="product-image">
+                                <img src="img/product-2.jpg" alt="Classic shoe">
+                                <span class="badge-custom badge-new">NEW</span>
+                            </div>
+                            <div class="p-4">
+                                <h3>Classic Smart</h3>
+                                <p>Comfort-focused everyday shoe.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong>$105</strong><span>SKU-002</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="product-card" data-category="popular">
+                            <div class="product-image">
+                                <img src="img/product-3.jpg" alt="Limited edition shoe">
+                                <span class="badge-custom badge-popular">POPULAR</span>
+                            </div>
+                            <div class="p-4">
+                                <h3>Smart Elite</h3>
+                                <p>Premium design for active lifestyles.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong>$129</strong><span>SKU-003</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inventory -->
+        <section id="inventory" class="page-section ">
+            <div class="container-fluid px-4">
+                <div class="section-heading">
+                    <div><span class="eyebrow">STOCK CONTROL</span>
+                        <h2>Inventory Management</h2>
+                    </div>
+                    <span class="section-icon"><i class="fas fa-box-archive"></i></span>
+                </div>
+            
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="product-card mini-card">
+                            <div class="product-image"><img src="img/product-4.jpg" alt="Inventory product"><span
+                                    class="badge-custom badge-popular">POPULAR</span></div>
+                            <div class="p-4">
+                                <h3>Premium Sole</h3>
+                                <p>Stock: 1,240 units</p><strong>Stable</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="product-card mini-card">
+                            <div class="product-image"><img src="img/product-5.jpg" alt="Inventory material"><span
+                                    class="badge-custom badge-hot">HOT</span></div>
+                            <div class="p-4">
+                                <h3>Running-inspired sneakers</h3>
+                                <p>Stock: 860 units</p><strong>Fast moving</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="product-card mini-card">
+                            <div class="product-image"><img src="img/product-6.jpg" alt="Inventory item"><span
+                                    class="badge-custom badge-new">NEW</span></div>
+                            <div class="p-4">
+                                <h3>Smart Components</h3>
+                                <p>Stock: 520 units</p><strong>Recently added</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Production -->
+        <section id="production" class="page-section section-soft">
+            <div class="container-fluid px-4">
+                <div class="section-heading">
+                    <div><span class="eyebrow">OPERATIONS</span>
+                        <h2>Current Production</h2>
+                    </div>
+                    <span class="section-icon"><i class="fas fa-gears"></i></span>
+                </div>
+
+                <div class="table-card mb-4">
+                    <div class="table-responsive">
+                        <table class="table align-middle mb-0 production-table">
+                            <thead>
+                                <tr>
+                                    <th>Order</th>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Status</th>
+                                    <th>Due Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#P-1024</td>
+                                    <td>Urban Runner</td>
+                                    <td>240</td>
+                                    <td><span class="status status-progress">In Progress</span></td>
+                                    <td>Sep 20</td>
+                                </tr>
+                                <tr>
+                                    <td>#P-1025</td>
+                                    <td>Classic Smart</td>
+                                    <td>180</td>
+                                    <td><span class="status status-ready">Ready</span></td>
+                                    <td>Sep 22</td>
+                                </tr>
+                                <tr>
+                                    <td>#P-1026</td>
+                                    <td>Smart Elite</td>
+                                    <td>320</td>
+                                    <td><span class="status status-pending">Pending</span></td>
+                                    <td>Sep 24</td>
+                                </tr>
+                                <tr>
+                                    <td>#P-1027</td>
+                                    <td>Urban Runner</td>
+                                    <td>150</td>
+                                    <td><span class="status status-progress">In Progress</span></td>
+                                    <td>Sep 26</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="section-heading small-heading">
+                    <h2>Production Stages</h2><span class="section-icon"><i class="fas fa-chart-bar"></i></span>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="stage-card">
+                            <div class="stage-title"><span>Cutting</span><strong>85%</strong></div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="stage-card">
+                            <div class="stage-title"><span>Stitching</span><strong>72%</strong></div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:72%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="stage-card">
+                            <div class="stage-title"><span>Assembly</span><strong>58%</strong></div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:58%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="stage-card">
+                            <div class="stage-title"><span>Packaging</span><strong>43%</strong></div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:43%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quality control -->
+        <section id="quality-control" class="page-section">
+            <div class="container-fluid px-4">
+                <div class="section-heading">
+                    <div><span class="eyebrow">QUALITY ASSURANCE</span>
+                        <h2>Quality Control</h2>
+                    </div><span class="section-icon"><i class="fas fa-certificate"></i></span>
+                </div>
+                <div class="row g-4 mb-4">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="start-card">
+                            <div class="icon-box"><i class="fas fa-certificate"></i></div>
+                            <div><span>Quality Rate</span><strong>96%</strong><small>Passed inspection</small></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="start-card">
+                            <div class="icon-box"><i class="fas fa-magnifying-glass"></i></div>
+                            <div><span>Inspected</span><strong>1,240</strong><small>Units checked</small></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="start-card">
+                            <div class="icon-box"><i class="fas fa-triangle-exclamation"></i></div>
+                            <div><span>Defects</span><strong>50</strong><small>Units identified</small></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="start-card">
+                            <div class="icon-box"><i class="fas fa-arrows-rotate"></i></div>
+                            <div><span>Rework</span><strong>22</strong><small>Units under rework</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-card">
+                    <div class="table-responsive">
+                        <table class="table align-middle mb-0 production-table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Batch</th>
+                                    <th>Inspected</th>
+                                    <th>Passed</th>
+                                    <th>Defects</th>
+                                    <th>Quality Rate</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Urban Runner</td>
+                                    <td>UR-0926</td>
+                                    <td>420</td>
+                                    <td>408</td>
+                                    <td>12</td>
+                                    <td>97.1%</td>
+                                    <td><span class="status status-ready">Passed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Classic Smart</td>
+                                    <td>CS-0926</td>
+                                    <td>350</td>
+                                    <td>337</td>
+                                    <td>13</td>
+                                    <td>96.3%</td>
+                                    <td><span class="status status-ready">Passed</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Smart Elite</td>
+                                    <td>SE-0926</td>
+                                    <td>280</td>
+                                    <td>267</td>
+                                    <td>13</td>
+                                    <td>95.4%</td>
+                                    <td><span class="status status-progress">Review</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Premium Sole</td>
+                                    <td>PS-0926</td>
+                                    <td>190</td>
+                                    <td>178</td>
+                                    <td>12</td>
+                                    <td>93.7%</td>
+                                    <td><span class="status status-pending">Rework</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sales -->
+        <section id="sales" class="page-section section-soft">
+            <div class="container-fluid px-4">
+                <div class="section-heading">
+                    <div><span class="eyebrow">PERFORMANCE</span>
+                        <h2>Sales Report</h2>
+                    </div><span class="section-icon"><i class="fas fa-chart-line"></i></span>
+                </div>
+                <div class="table-card">
+                    <div class="table-responsive">
+                        <table class="table align-middle mb-0 production-table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Units Sold</th>
+                                    <th>Revenue</th>
+                                    <th>Status</th>
+                                    <th>Period</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Urban Runner</td>
+                                    <td>620</td>
+                                    <td>$55,180</td>
+                                    <td><span class="status status-ready">Strong</span></td>
+                                    <td>September</td>
+                                </tr>
+                                <tr>
+                                    <td>Classic Smart</td>
+                                    <td>480</td>
+                                    <td>$50,400</td>
+                                    <td><span class="status status-progress">Growing</span></td>
+                                    <td>September</td>
+                                </tr>
+                                <tr>
+                                    <td>Smart Elite</td>
+                                    <td>310</td>
+                                    <td>$39,990</td>
+                                    <td><span class="status status-ready">Strong</span></td>
+                                    <td>September</td>
+                                </tr>
+                                <tr>
+                                    <td>Premium Sole</td>
+                                    <td>220</td>
+                                    <td>$18,700</td>
+                                    <td><span class="status status-pending">Stable</span></td>
+                                    <td>September</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Return -->
+        <section id="returns" class="page-section returns-section">
+
+            <div class="container-fluid px-4">
+
+                <!-- Section Heading -->
+                <div class="section-heading mb-4">
+
+                    <div>
+                        <span class="eyebrow">CUSTOMER RETURNS</span>
+
+                        <h2>
+                            Returns Management
+                        </h2>
+
+                        <p>
+                            Track and manage returned products and their status.
+                        </p>
+
+
+                    </div>
+                    <span class="section-icon">
+                        <i class="fas fa-rotate-left"></i>
+                    </span>
+
+
+
+                </div>
+
+
+                <!-- Return Statistics -->
+                <div class=" row g-4 mb-4">
+
+                    <!-- Total Returns -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="card return-stat-card h-100">
+
+                            <div class="card-body">
+
+                                <div class="icon-box">
+                                    <i class="fas fa-rotate-left"></i>
+                                </div>
+
+                                <h6>Total Returns</h6>
+
+                                <h3>126</h3>
+
+                                <p>Returned items</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Pending -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="card return-stat-card h-100">
+
+                            <div class="card-body">
+
+                                <div class="icon-box">
+                                    <i class="fas fa-hourglass-half"></i>
+                                </div>
+
+                                <h6>Pending Returns</h6>
+
+                                <h3>18</h3>
+
+                                <p>Waiting for review</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Approved -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="card return-stat-card h-100">
+
+                            <div class="card-body">
+
+                                <div class="icon-box">
+                                    <i class="fas fa-circle-check"></i>
+                                </div>
+
+                                <h6>Approved</h6>
+
+                                <h3>92</h3>
+
+                                <p>Approved returns</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Refunded -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="card return-stat-card h-100">
+
+                            <div class="card-body">
+
+                                <div class="icon-box">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+
+                                <h6>Refunded</h6>
+
+                                <h3>16</h3>
+
+                                <p>Completed refunds</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Returns Table -->
+
+                <div class="card table-card">
+
+                    <div class="table-responsive">
+
+                        <table class="table align-middle mb-0 production-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Return ID</th>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Reason</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>#RET-102</td>
+
+                                    <td>
+                                        Sport Running Shoe
+                                    </td>
+
+                                    <td>2</td>
+
+                                    <td>
+                                        Wrong Size
+                                    </td>
+
+                                    <td>
+                                        Sep 18, 2026
+                                    </td>
+
+                                    <td>
+                                        <span class="badge status-pending">
+                                            Pending
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>#RET-101</td>
+
+                                    <td>
+                                        Classic Loafer
+                                    </td>
+
+                                    <td>1</td>
+
+                                    <td>
+                                        Damaged Product
+                                    </td>
+
+                                    <td>
+                                        Sep 17, 2026
+                                    </td>
+
+                                    <td>
+                                        <span class="badge status-ready">
+                                            Approved
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>#RET-100</td>
+
+                                    <td>
+                                        Casual Sneaker
+                                    </td>
+
+                                    <td>3</td>
+
+                                    <td>
+                                        Wrong Product
+                                    </td>
+
+                                    <td>
+                                        Sep 16, 2026
+                                    </td>
+
+                                    <td>
+                                        <span class="badge status-progress">
+                                            Refunded
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>#RET-099</td>
+
+                                    <td>
+                                        Classic Sports Shoe
+                                    </td>
+
+                                    <td>1</td>
+
+                                    <td>
+                                        Size Issue
+                                    </td>
+
+                                    <td>
+                                        Sep 15, 2026
+                                    </td>
+
+                                    <td>
+                                        <span class="badge bg-danger bg-opacity-75">
+                                            Rejected
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>#RET-098</td>
+
+                                    <td>
+                                        Leather Formal Shoe
+                                    </td>
+
+                                    <td>2</td>
+
+                                    <td>
+                                        Customer Request
+                                    </td>
+
+                                    <td>
+                                        Sep 14, 2026
+                                    </td>
+
+                                    <td>
+                                        <span class="badge status-ready">
+                                            Approved
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Employees -->
+        <section id="employees" class="page-section section-soft">
+            <div class="container-fluid px-4">
+                <div class="section-heading">
+                    <div><span class="eyebrow">TEAM MANAGEMENT</span>
+                        <h2>Employees</h2>
+                    </div><span class="section-icon"><i class="fas fa-people-group"></i></span>
+                </div>
+                <div class="row g-4 mb-4">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="start-card">
+                            <div class="icon-box"><i class="fas fa-people-group"></i></div>
+                            <div><span>Total Employees</span><strong>86</strong><small>Active staff</small></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="start-card">
+                            <div class="icon-box"><i class="fas fa-user-check"></i></div>
+                            <div><span>Present Today</span><strong>81</strong><small>94% attendance</small></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="start-card">
+                            <div class="icon-box"><i class="fas fa-gear"></i></div>
+                            <div><span>Production Team</span><strong>54</strong><small>Factory operators</small></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="start-card">
+                            <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                            <div><span>Productivity</span><strong>91%</strong><small>Current average</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-card">
+                    <div class="table-responsive">
+                        <table class="table align-middle mb-0 production-table">
+                            <thead>
+                                <tr>
+                                    <th>Employee</th>
+                                    <th>Department</th>
+                                    <th>Role</th>
+                                    <th>Attendance</th>
+                                    <th>Performance</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ahmed Hassan</td>
+                                    <td>Production</td>
+                                    <td>Assembly Operator</td>
+                                    <td>98%</td>
+                                    <td>94%</td>
+                                    <td><span class="status status-ready">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Omar Ali</td>
+                                    <td>Cutting</td>
+                                    <td>Cutting Specialist</td>
+                                    <td>96%</td>
+                                    <td>91%</td>
+                                    <td><span class="status status-ready">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Youssef Adel</td>
+                                    <td>Stitching</td>
+                                    <td>Senior Operator</td>
+                                    <td>93%</td>
+                                    <td>89%</td>
+                                    <td><span class="status status-progress">On Shift</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Mahmoud Samir</td>
+                                    <td>Packaging</td>
+                                    <td>Packaging Operator</td>
+                                    <td>95%</td>
+                                    <td>90%</td>
+                                    <td><span class="status status-ready">Active</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reports -->
+        <section id="reports" class="page-section ">
+            <div class="container-fluid px-4">
+                <div class="section-heading">
+                    <div><span class="eyebrow">ANALYTICS</span>
+                        <h2>Report &amp; Analytics</h2>
+                    </div><span class="section-icon"><i class="fas fa-file-lines"></i></span>
+                </div>
+                <div class="table-card">
+                    <div class="table-responsive">
+                        <table class="table align-middle mb-0 production-table">
+                            <thead>
+                                <tr>
+                                    <th>Report</th>
+                                    <th>Category</th>
+                                    <th>Records</th>
+                                    <th>Status</th>
+                                    <th>Updated</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monthly Sales</td>
+                                    <td>Sales</td>
+                                    <td>1,630</td>
+                                    <td><span class="status status-ready">Complete</span></td>
+                                    <td>Today</td>
+                                </tr>
+                                <tr>
+                                    <td>Production Efficiency</td>
+                                    <td>Production</td>
+                                    <td>860</td>
+                                    <td><span class="status status-progress">Updated</span></td>
+                                    <td>Today</td>
+                                </tr>
+                                <tr>
+                                    <td>Inventory Movement</td>
+                                    <td>Inventory</td>
+                                    <td>2,620</td>
+                                    <td><span class="status status-ready">Complete</span></td>
+                                    <td>Yesterday</td>
+                                </tr>
+                                <tr>
+                                    <td>Product Performance</td>
+                                    <td>Products</td>
+                                    <td>1,410</td>
+                                    <td><span class="status status-pending">Review</span></td>
+                                    <td>Yesterday</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Monthly Profit Analysis Section -->
+        <section id="profit-analysis" class="page-section section-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">FINANCIAL INSIGHTS</span>
+                        <h2>Monthly Profit Analysis</h2>
+                    </div>
+                    <div class="section-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+                <div class="row g-4 mb-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="analysis-card highest">
+                            <div class="analysis-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <span>Highest Profit</span>
+                            <strong>May 2026</strong>
+                            <p>$29,500 Net Profit</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="analysis-card lowest">
+                            <div class="analysis-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <span>Lowest Profit</span>
+                            <strong>Feb 2026</strong>
+                            <p>$12,800 Net Profit</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="analysis-card compare">
+                            <div class="analysis-icon">
+                                <i class="fas fa-right-left"></i>
+                            </div>
+                            <span>Current vs Previous</span>
+                            <strong>May vs April</strong>
+                            <p>
+                                <span class="trend-up">+ $8,800 (42.5% ↑)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="analysis-card growth">
+                            <div class="analysis-icon">
+                                <i class="fas fa-percent"></i>
+                            </div>
+                            <span>Avg Change Rate</span>
+                            <strong>+21.7%</strong>
+                            <p>Growth in Profit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-card">
+                    <div class="table-responsive">
+                        <table class="table production-table mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Total Sales</th>
+                                    <th>Total Expenses</th>
+                                    <th>Net Profit</th>
+                                    <th>vs Last Month</th>
+                                    <th>Change %</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>January 2026</strong>
+                                    </td>
+                                    <td>$45,200</td>
+                                    <td>$28,500</td>
+                                    <td>
+                                        <strong>$16,700</strong>
+                                    </td>
+                                    <td>
+                                        <span class="compare-neutral">— First Month</span>
+                                    </td>
+                                    <td>—</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>February 2026</strong>
+                                    </td>
+                                    <td>$38,900</td>
+                                    <td>$26,100</td>
+                                    <td>
+                                        <strong>$12,800</strong>
+                                    </td>
+                                    <td>
+                                        <span class="compare-down">
+                                            <i class="fas fa-arrow-down"></i> $3,900 Less
+                                        </span>
+                                    </td>
+                                    <td class="trend-down">-23.3%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>March 2026</strong>
+                                    </td>
+                                    <td>$52,300</td>
+                                    <td>$29,800</td>
+                                    <td>
+                                        <strong>$22,500</strong>
+                                    </td>
+                                    <td>
+                                        <span class="compare-up">
+                                            <i class="fas fa-arrow-up"></i> $9,700 More
+                                        </span>
+                                    </td>
+                                    <td class="trend-up">+75.7%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>April 2026</strong>
+                                    </td>
+                                    <td>$48,100</td>
+                                    <td>$27,400</td>
+                                    <td>
+                                        <strong>$20,700</strong>
+                                    </td>
+                                    <td>
+                                        <span class="compare-down">
+                                            <i class="fas fa-arrow-down"></i> $1,800 Less
+                                        </span>
+                                    </td>
+                                    <td class="trend-down">-8.0%</td>
+                                </tr>
+                                <tr class="best-row">
+                                    <td>
+                                        <strong>May 2026 <i class="fas fa-trophy text-warning"></i></strong>
+                                    </td>
+                                    <td>$61,500</td>
+                                    <td>$32,000</td>
+                                    <td>
+                                        <strong>$29,500</strong>
+                                    </td>
+                                    <td>
+                                        <span class="compare-up">
+                                            <i class="fas fa-arrow-up"></i> $8,800 More
+                                        </span>
+                                    </td>
+                                    <td class="trend-up">+42.5%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Intelligence - LAST SECTION -->
+        <section id="business-intelligence" class="page-section bi-section">
+            <div class="container-fluid px-4">
+                <div class="section-heading">
+                    <div><span class="eyebrow">DECISION SUPPORT</span>
+                        <h2>Business Intelligence</h2>
+                    </div><span class="section-icon"><i class="fas fa-lightbulb"></i></span>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-4 ">
+                        <div class="bi-card"><i class="fas fa-arrow-trend-up"></i>
+                            <h3>Sales Trend</h3><strong>+18.4%</strong>
+                            <p>Monthly sales growth compared with the previous period.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="bi-card"><i class="fas fa-gauge-high"></i>
+                            <h3>Production Efficiency</h3><strong>86%</strong>
+                            <p>Current average production completion rate.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="bi-card"><i class="fas fa-boxes-stacked"></i>
+                            <h3>Inventory Health</h3><strong>92%</strong>
+                            <p>Inventory availability across active product lines.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="decision-note mt-4">
+                    <div class="decision-note-icon"><i class="fas fa-lightbulb"></i></div>
+                    <div>
+                        <h3>Decision Note</h3>
+                        <p>Prioritize production for fast-moving products while keeping inventory above the required
+                            safety level. Review returns and quality results before increasing output, so purchasing and
+                            production decisions are based on demand, stock and quality together.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+<!-- Footer -->
+    <footer class="smart-footer">
+        <div class="container-fluid px-4">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img class="shadow nav-logo" src="img/smart-shoe-logo.jpeg" alt="Smart Shoe Logo">
+                    <p>Smart Shoe Management System</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <a href="tel:+201000000000"><i class="fas fa-phone"></i> +20 100 000 0000</a>
+                    <a href="mailto:info@smartshoe.com"><i class="fas fa-envelope"></i> info@smartshoe.com</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a class="facebook" href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a class="instagram" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="linkedin" href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a class="youtube" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>© 2026 Smart Shoe. All Rights Reserved. Team1 F10.</span>
+                <span>Designed for smart business management.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle (local/offline) -->
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
